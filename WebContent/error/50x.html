@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]><html class="ie6 lte9 lte8 lte7" lang="zh-cn"><![endif]-->
+<!--[if IE 7]><html class="ie7 lte9 lte8 lte7" lang="zh-cn"><![endif]-->
+<!--[if IE 8]><html class="ie8 lte9 lte8" lang="zh-cn"><![endif]-->
+<!--[if IE 9]><html class="ie9 lte9" lang="zh-cn"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) | !(IE 9)  ]><!-->
+<html lang="zh-cn">
+<!--<![endif]-->
+<head>
+<title>布冰厅 :页面出错</title>
+</head>
+
+<body>
+	<div class="container" style="padding: 10px 10px 0px 300px;">
+		<ul>
+			<li><h1>50x - 此页已乘仙归去~</h1></li>
+			<li>别动，下面送你回到过去……</li>
+			<li><span id="second" style="color: Red;"></span>&nbsp;&nbsp;秒后将自动跳转到布冰厅首页</li>
+			<li>也可以点击=》 &nbsp;<a href="http://www.bubbt.com">布冰厅首页</a><br /> <br /> <br /></li>
+			<li>Copyright &copy; 
+			<script>
+				document.write(((new Date()).getYear() < 1000 ? ((new Date())
+						.getYear() + 1900) : ((new Date()).getYear())));
+
+				var seconds = 5;//记数时间
+				document.getElementById("second").innerHTML = seconds;
+				var handle;//事件柄
+				//开始记数器
+				function startTimer() {
+					handle = setInterval("timer()", 1000);
+				}
+
+				//计数器
+				function timer() {
+					seconds -= 1;
+					document.getElementById("second").innerHTML = seconds;
+					if (seconds == 0) {
+						clearInterval(handle);
+						window.location.href = 'http://www.bubbt.com';
+
+					}
+				}
+				//1秒后显示计数器
+				setTimeout("startTimer()", 0);
+			</script> 布冰厅
+			</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<br />
+	<br />
+</body>
+</html>
