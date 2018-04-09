@@ -15,6 +15,5 @@
     hashNoteId：BF4950F7FF9CA52A3CCEC8BB08A6323247E5F2FD<br />
     content：3A7E5A3D21BABA12275FAB7AC5032177<br />
 
-<br />
 # 公条<br />
 也就是你能公开给大家看的东西，没有秘密，公开时间有期限可选。<br />
